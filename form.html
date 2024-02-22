@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <!--Formulário-->
+      <fieldset>
+        <!--Grupo de elementos de formulário-->
+        <legend>Elementos de formulário</legend>
+        <!--Legenda-->
+        <div>
+          <input
+            type="text"
+            name="nome"
+            placeholder="Digite seu nome"
+            style="outline: 0"
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            name="nome"
+            placeholder="Digite seu E-mail"
+            style="outline: 0"
+          />
+        </div>
+        <div>
+          <select name="lista" style="outline: 0">
+            <option value="" disabled selected>Qual sua idade?</option>
+            <option value="-18">-18</option>
+            <option value="+18">+18</option>
+            <option value="+30">+30</option>
+          </select>
+        </div>
+        <h2>Qual sua cidade?</h2>
+        <div class="input">
+          <input type="radio" name="cidade" value="Florianópolis" /><span
+            >Florianópolis</span
+          >
+          <br />
+          <input type="radio" name="cidade" value="São Paulo" /><span
+            >São Paulo</span
+          >
+          <br />
+          <input type="radio" name="cidade" value="Cascavel" /><span
+            >Cascavel</span
+          >
+        </div>
+
+        <h2>O que você gosta de comer?</h2>
+        <div class="input">
+          <input type="checkbox" name="cidade[]" value="" /><span
+            >Uva passa</span
+          >
+          <br />
+          <input type="checkbox" name="cidade[]" value="" /><span>Morango</span>
+          <br />
+          <input type="checkbox" name="cidade[]" value="" /><span>Banana</span>
+        </div>
+
+        <div>
+          <textarea
+            name="obs"
+            id=""
+            cols="30"
+            rows="10"
+            style="outline: 0"
+            placeholder="Possui alguma observação?"
+          ></textarea>
+        </div>
+
+        <div>
+          <input type="submit" name="acao" value="Enviar!" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
